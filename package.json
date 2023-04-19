@@ -1,0 +1,26 @@
+{
+  "name": "auto-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "ld-codes <123950213+ld-codes@users.noreply.github.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "auto": "^10.44.0"
+  },
+  "repository": "ld-codes/auto-test",
+  "auto": {
+    "plugins": [
+      "npm",
+      "all-contributors",
+      "conventional-commits",
+      "first-time-contributor",
+      "released"
+    ],
+    "onlyPublishWithReleaseLabel": true
+  }
+}
