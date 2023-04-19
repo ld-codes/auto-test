@@ -10,6 +10,9 @@ devDependencies:
   '@auto-it/first-time-contributor':
     specifier: ^10.44.0
     version: 10.44.0(@types/node@18.15.11)(typescript@5.0.4)
+  '@auto-it/git-tag':
+    specifier: ^10.44.0
+    version: 10.44.0(@types/node@18.15.11)(typescript@5.0.4)
   '@auto-it/released':
     specifier: ^10.44.0
     version: 10.44.0(@types/node@18.15.11)(typescript@5.0.4)
@@ -135,6 +138,21 @@ packages:
       endent: 2.1.0
       tslib: 2.1.0
       url-join: 4.0.1
+    transitivePeerDependencies:
+      - '@swc/core'
+      - '@swc/wasm'
+      - '@types/node'
+      - encoding
+      - supports-color
+      - typescript
+    dev: true
+
+  /@auto-it/git-tag@10.44.0(@types/node@18.15.11)(typescript@5.0.4):
+    resolution: {integrity: sha512-4wS80e1/pO1Qbd/03vEXRH/ndVRAVyetcvA/1N6fLou4d906s6v9uKzw2dvVIJI5Lj+S5m5L5+EOCZyfZZ3HhQ==}
+    dependencies:
+      '@auto-it/core': 10.44.0(@types/node@18.15.11)(typescript@5.0.4)
+      semver: 7.5.0
+      tslib: 2.1.0
     transitivePeerDependencies:
       - '@swc/core'
       - '@swc/wasm'
