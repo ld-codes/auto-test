@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "release": "auto shipit"
   },
   "keywords": [],
   "author": "ld-codes <123950213+ld-codes@users.noreply.github.com>",
