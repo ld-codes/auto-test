@@ -19,10 +19,11 @@ $ git checkout main
 $ git pull
 ```
 
-6. Bump version
+6. Create a new tag
 
 ```
-$ npx auto version
+$ git tag v[x.y.z]
+$ git tag --push
 ```
 
 7. Release
