@@ -1,6 +1,6 @@
 {
   "name": "auto-test",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -14,6 +14,7 @@
     "@auto-it/all-contributors": "^10.44.0",
     "@auto-it/conventional-commits": "^10.44.0",
     "@auto-it/first-time-contributor": "^10.44.0",
+    "@auto-it/git-tag": "^10.44.0",
     "@auto-it/released": "^10.44.0",
     "auto": "^10.44.0"
   },
@@ -23,7 +24,8 @@
       "all-contributors",
       "conventional-commits",
       "first-time-contributor",
-      "released"
+      "released",
+      "git-tag"
     ],
     "onlyPublishWithReleaseLabel": true
   }
