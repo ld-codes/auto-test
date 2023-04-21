@@ -1,8 +1,9 @@
-name: Add release label
+name: label-on-release-pr
 
 on:
   pull_request:
-    types: [closed]
+    branches:
+      - "main"
 
 jobs:
   label-release:
@@ -11,8 +12,8 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
 
-      - name: Label Release
-        if: github.event.pull_request.merged == true && github.event.pull_request.base.ref == 'production' && github.event.pull_request.head.ref == 'staging'
+      - name: Add omit-release-notes label
+        if: github.event.pull_request.head.ref == 'develop'
         uses: actions/github-script@v4
         with:
           script: |
@@ -20,6 +21,6 @@ jobs:
               owner: context.repo.owner,
               repo: context.repo.repo,
               issue_number: context.issue.number,
-              labels: ['release']
+              labels: ['omit-release-notes']
             })
           token: ${{ secrets.GITHUB_TOKEN }}
