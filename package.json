@@ -11,21 +11,26 @@
   "author": "ld-codes <123950213+ld-codes@users.noreply.github.com>",
   "license": "ISC",
   "devDependencies": {
-    "@auto-it/all-contributors": "^10.44.0",
     "@auto-it/conventional-commits": "^10.44.0",
     "@auto-it/first-time-contributor": "^10.44.0",
     "@auto-it/git-tag": "^10.44.0",
+    "@auto-it/omit-release-notes": "^10.45.0",
     "@auto-it/released": "^10.44.0",
     "auto": "^10.44.0"
   },
   "repository": "ld-codes/auto-test",
   "auto": {
     "plugins": [
-      "all-contributors",
       "conventional-commits",
       "first-time-contributor",
       "released",
-      "git-tag"
+      "git-tag",
+      [
+        "omit-release-notes",
+        {
+          "labels": "release"
+        }
+      ]
     ]
   }
 }
