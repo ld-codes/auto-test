@@ -28,7 +28,7 @@
       [
         "omit-release-notes",
         {
-          "labels": "release"
+          "labels": "omit-release-notes"
         }
       ]
     ]
