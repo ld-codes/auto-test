@@ -1,3 +1,21 @@
+# v1.3.0 (Fri Apr 21 2023)
+
+#### 🚀 Enhancement
+
+- Release [#14](https://github.com/ld-codes/auto-test/pull/14) ([@ld-codes](https://github.com/ld-codes))
+- feat: feat 007 [#13](https://github.com/ld-codes/auto-test/pull/13) ([@ld-codes](https://github.com/ld-codes))
+
+#### 🐛 Bug Fix
+
+- Develop [#15](https://github.com/ld-codes/auto-test/pull/15) ([@ld-codes](https://github.com/ld-codes))
+- fix: fix 007 [#12](https://github.com/ld-codes/auto-test/pull/12) ([@ld-codes](https://github.com/ld-codes))
+
+#### Authors: 1
+
+- [@ld-codes](https://github.com/ld-codes)
+
+---
+
 # v1.2.0 (Fri Apr 21 2023)
 
 #### 🚀 Enhancement
