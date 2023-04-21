@@ -23,4 +23,9 @@ jobs:
               issue_number: context.issue.number,
               labels: ['omit-release-notes']
             })
-          token: ${{ secrets.GITHUB_TOKEN }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+permissions:
+  contents: write
+  pull-requests: write
