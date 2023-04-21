@@ -1,0 +1,25 @@
+name: Add release label
+
+on:
+  pull_request:
+    types: [closed]
+
+jobs:
+  label-release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Label Release
+        if: github.event.pull_request.merged == true && github.event.pull_request.base.ref == 'production' && github.event.pull_request.head.ref == 'staging'
+        uses: actions/github-script@v4
+        with:
+          script: |
+            github.issues.addLabels({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.issue.number,
+              labels: ['release']
+            })
+          token: ${{ secrets.GITHUB_TOKEN }}
