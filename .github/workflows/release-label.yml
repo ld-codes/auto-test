@@ -2,7 +2,8 @@ name: Add release label
 
 on:
   pull_request:
-    types: [closed]
+    branches:
+      - "main"
 
 jobs:
   label-release:
@@ -12,7 +13,6 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Label Release
-        if: github.event.pull_request.merged == true && github.event.pull_request.base.ref == 'production' && github.event.pull_request.head.ref == 'staging'
         uses: actions/github-script@v4
         with:
           script: |
