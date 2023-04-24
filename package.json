@@ -21,16 +21,16 @@
   "repository": "ld-codes/auto-test",
   "auto": {
     "plugins": [
-      "conventional-commits",
-      "first-time-contributor",
-      "released",
       "git-tag",
       [
         "omit-release-notes",
         {
           "labels": "omit-release-notes"
         }
-      ]
+      ],
+      "conventional-commits",
+      "first-time-contributor",
+      "released"
     ]
   }
 }
